@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>prodow test</title>
+</head>
+<body>
+<h1>Hello, Result Page</h1>
+
+<ul>
+	<%
+		result_data = result
+	%>	
+	% for data in result_data:
+		<li>${data['name']}</li>
+	% endfor
+</ul>
+
+<a href="/foo">返回</a>
+
+
+</body>
+</html>
